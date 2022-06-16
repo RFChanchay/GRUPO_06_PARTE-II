@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Navegación</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+      <nav
+        class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
+      >
+        <a
+          href="index.html"
+          class="navbar-brand font-weight-bold text-secondary"
+          style="font-size: 50px"
+        >
+          <i class="bi bi-laptop-fill"></i>
+          <span class="text-primary">GRUPO6</span>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary mb-5">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center"
+        style="min-height: 400px"
+      >
+        <h3 class="display-3 font-weight-bold text-white">Navegación</h3>
+        <div class="d-inline-flex text-white">
+          
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Class Start -->
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            
+          </p>
+          <h1 class="mb-4">Nodos DOM</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              <p><span>De acuerdo con el est&aacute;ndar W3C HTML DOM, todo en un documento HTML es un nodo:</span></p>
+<ul>
+<li><span>Todo el documento es un nodo de documento.</span></li>
+<li><span>Cada elemento HTML es un nodo de elemento</span></li>
+<li><span>El texto dentro de los elementos HTML son nodos de texto.</span></li>
+<li><span>Cada atributo HTML es un nodo de atributo (obsoleto)</span></li>
+<li><span>Todos los comentarios son nodos de comentarios.</span></li>
+</ul>
+<div class="w3-white notranslate"><img class="w3-image" src="https://www.w3schools.com/js/pic_htmltree.gif" alt="DOM HTML tree" /></div>
+<p><span>Con el HTML DOM, JavaScript puede acceder a todos los nodos del &aacute;rbol de nodos.</span></p>
+<p><span>Se pueden crear nuevos nodos y todos los nodos se pueden modificar o eliminar.</span></p>
+
+<h2><span>Relaciones de nodo</span></h2>
+<p><span>Los nodos del &aacute;rbol de nodos tienen una relaci&oacute;n jer&aacute;rquica entre s&iacute;.</span></p>
+<p><span>Los t&eacute;rminos padre, hijo y hermano se utilizan para describir las relaciones.</span></p>
+<ul>
+<li><span>En un &aacute;rbol de nodos, el nodo superior se llama ra&iacute;z (o nodo ra&iacute;z)</span></li>
+<li><span>Cada nodo tiene exactamente un padre, excepto la ra&iacute;z (que no tiene padre)</span></li>
+<li><span>Un nodo puede tener varios hijos.</span></li>
+<li><span>Los hermanos (hermanos o hermanas) son nodos con el mismo padre</span></li>
+</ul>
+<div class="w3-row-padding">
+<div class="w3-half">
+<div class="w3-code w3-border notranslate htmlHigh"><span class="tagnamecolor"><span class="tagcolor">&lt;</span>html<span class="tagcolor">&gt;</span></span><br /><br />&nbsp;<span>&nbsp;</span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>head<span class="tagcolor">&gt;</span></span><br />&nbsp;&nbsp;&nbsp;<span>&nbsp;</span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>title<span class="tagcolor">&gt;</span></span>DOM Tutorial<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/title<span class="tagcolor">&gt;</span></span><br />&nbsp;<span>&nbsp;</span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/head<span class="tagcolor">&gt;</span></span><br /><br />&nbsp;<span>&nbsp;</span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>body<span class="tagcolor">&gt;</span></span><br />&nbsp;&nbsp;&nbsp;<span>&nbsp;</span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>h1<span class="tagcolor">&gt;</span></span>DOM Lesson one<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/h1<span class="tagcolor">&gt;</span></span><br />&nbsp;&nbsp;&nbsp;<span>&nbsp;</span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>p<span class="tagcolor">&gt;</span></span>Hello world!<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/p<span class="tagcolor">&gt;</span></span><br />&nbsp;<span>&nbsp;</span><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/body<span class="tagcolor">&gt;</span></span><br /><br /><span class="tagnamecolor"><span class="tagcolor">&lt;</span>/html<span class="tagcolor">&gt;</span></span></div>
+</div>
+<div class="w3-half"><img src="https://www.w3schools.com/js/pic_navigate.gif" alt="&Aacute;rbol de nodos" /></div>
+</div>
+
+<p><span>Desde el HTML anterior se puede leer:</span></p>
+<ul>
+<li><code class="w3-codespan">&lt;html&gt;</code><span>es el nodo ra&iacute;z</span></li>
+<li><code class="w3-codespan">&lt;html&gt;</code><span>no tiene padres</span></li>
+<li><code class="w3-codespan">&lt;html&gt;</code><span>es el padre de&nbsp;</span><code class="w3-codespan">&lt;head&gt;</code><span>y</span><code class="w3-codespan">&lt;body&gt;</code></li>
+<li><code class="w3-codespan">&lt;head&gt;</code><span>es el primer hijo de</span><code class="w3-codespan">&lt;html&gt;</code></li>
+<li><code class="w3-codespan">&lt;body&gt;</code><span>es el ultimo hijo de</span><code class="w3-codespan">&lt;html&gt;</code></li>
+</ul>
+<p><span>y:</span></p>
+<ul>
+<li><code class="w3-codespan">&lt;head&gt;</code><span>tiene un hijo:</span><code class="w3-codespan">&lt;title&gt;</code></li>
+<li><code class="w3-codespan">&lt;title&gt;</code><span>tiene un hijo (un nodo de texto): "Tutorial DOM"</span></li>
+<li><code class="w3-codespan">&lt;body&gt;</code><span>tiene dos hijos:&nbsp;</span><code class="w3-codespan">&lt;h1&gt;</code><span>y</span><code class="w3-codespan">&lt;p&gt;</code></li>
+<li><code class="w3-codespan">&lt;h1&gt;</code><span>tiene un hijo: "Lecci&oacute;n uno de DOM"</span></li>
+<li><code class="w3-codespan">&lt;p&gt;</code><span>tiene un hijo: "&iexcl;Hola mundo!"</span></li>
+<li><code class="w3-codespan">&lt;h1&gt;</code><span>y&nbsp;</span><code class="w3-codespan">&lt;p&gt;</code><span>son hermanos</span></li>
+</ul>
+
+<h2><span>Navegaci&oacute;n entre nodos</span></h2>
+<p><span>Puede usar las siguientes propiedades de nodo para navegar entre nodos con JavaScript:</span></p>
+<ul>
+<li><code class="w3-codespan">parentNode</code></li>
+<li><code class="w3-codespan">childNodes[<em>nodenumber</em>]</code></li>
+<li><code class="w3-codespan">firstChild</code></li>
+<li><code class="w3-codespan">lastChild</code></li>
+<li><code class="w3-codespan">nextSibling</code></li>
+<li><code class="w3-codespan">previousSibling</code></li>
+</ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Class Start -->
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            
+          </p>
+          <h1 class="mb-4">Nodos secundarios y valores de nodo </h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+             
+Un error común en el procesamiento de DOM es esperar que un nodo de elemento contenga texto.
+            </p>
+            <div class="w3-example">
+<h3><span>Ejemplo:</span></h3>
+<div class="w3-code notranslate htmlHigh"><span class="tagnamecolor"><code><span class="tagcolor">&lt;</span>title<span class="attributecolor"><span>&nbsp;</span>id<span class="attributevaluecolor">="demo"</span></span><span class="tagcolor">&gt;</span></span>DOM Tutorial<span class="tagnamecolor"><span class="tagcolor">&lt;</span>/title<span class="tagcolor">&gt;</span></code></span></div>
+</div>
+<p><span>El nodo del elemento&nbsp;</span><code class="w3-codespan">&lt;title&gt;</code><span>(en el ejemplo anterior)&nbsp;</span><strong><span>no</span></strong><span>&nbsp;contiene texto.</span></p>
+<p><span>Contiene un&nbsp;</span><b><span>nodo de texto</span></b><span>&nbsp;con el valor "Tutorial DOM".</span></p>
+<p><span>Se puede acceder al valor del nodo de texto mediante la&nbsp;</span><code class="w3-codespan">innerHTML</code><span>propiedad del nodo:</span></p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh"><span class="jscolor"> <code> myTitle = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">innerHTML</span>;</code><span class="jsnumbercolor"></span></span></div>
+</div>
+<p><span>Acceder a la propiedad innerHTML es lo mismo que acceder a la&nbsp;</span><code class="w3-codespan">nodeValue</code><span>&nbsp;del primer hijo:</span></p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh"><span class="jscolor"> <code>myTitle = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">firstChild</span>.<span class="jspropertycolor">nodeValue</span>;</code><span class="jsnumbercolor"></span></span></div>
+</div>
+<p><span>El acceso al primer hijo tambi&eacute;n se puede hacer as&iacute;:</span></p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh"><span class="jscolor"> <code>myTitle = document.<span class="jspropertycolor">getElementById</span>(<span class="jsstringcolor">"demo"</span>).<span class="jspropertycolor">childNodes</span>[<span class="jsnumbercolor">0</span>].<span class="jspropertycolor">nodeValue</span>;</code><span class="jsnumbercolor"></span></span></div>
+</div>
+<p><span>Todos los (3) ejemplos siguientes recuperan el texto de un&nbsp;</span><code class="w3-codespan">&lt;h1&gt;</code><span>elemento y lo copian en un elemento &nbsp;</span><code class="w3-codespan">&lt;p&gt;</code><span>:</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="container-fluid py-1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+<div class="w3-example">
+<p>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;body&gt;</p>
+<p>&lt;h1 id="id01"&gt;TEXTO&lt;/h1&gt;<br />&lt;p id="id02"&gt;&lt;/p&gt;</p>
+<p>&lt;script&gt;<br />document.getElementById("id02").innerHTML = document.getElementById("id01").innerHTML;<br />&lt;/script&gt;</p>
+<p>&lt;/body&gt;<br />&lt;/html&gt;</p>
+</div>
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left">
+                    <!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id01">TEXTO</h1>
+<p id="id02"></p>
+
+<script>
+document.getElementById("id02").innerHTML = document.getElementById("id01").innerHTML;
+</script>
+
+</body>
+</html>
+                  </pre>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+
+
+    <!-- Registration Start -->
+
+
+<div class="container-fluid py-1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+<div class="w3-example">
+<p>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;body&gt;</p>
+<p>&lt;h1 id="id01"&gt;TEXTO&lt;/h1&gt;<br />&lt;p id="id02"&gt;&lt;/p&gt;</p>
+<p>&lt;script&gt;<br />document.getElementById("id02").innerHTML = document.getElementById("id01").firstChild.nodeValue;<br />&lt;/script&gt;</p>
+<p>&lt;/body&gt;<br />&lt;/html&gt;</p>
+</div>
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left">
+                    <!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id03">TEXTO</h1>
+<p id="id04"></p>
+
+<script>
+document.getElementById("id04").innerHTML = document.getElementById("id03").firstChild.nodeValue;
+</script>
+
+</body>
+</html>
+                  </pre>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+
+
+    <!-- Registration Start -->
+
+
+<div class="container-fluid py-1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+<div class="w3-example">
+<p>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;body&gt;</p>
+<p>&lt;h1 id="id01"&gt;TEXTO&lt;/h1&gt;<br />&lt;p id="id02"&gt;Hola&lt;/p&gt;</p>
+<p>&lt;script&gt;<br />document.getElementById("id02").innerHTML = document.getElementById("id01").childNodes[0].nodeValue;<br />&lt;/script&gt;</p>
+<p>&lt;/body&gt;<br />&lt;/html&gt;</p>
+</div>
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left">
+                    <!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id01">TEXTO</h1>
+<p id="id06"></p>
+
+<script>
+document.getElementById("id06").innerHTML = document.getElementById("id01").childNodes[0].nodeValue;;
+</script>
+
+</body>
+</html>
+                  </pre>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+
+
+    <!-- Registration Start -->
+
+
+<div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            
+          </p>
+          <h1 class="mb-4">HTML interno</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            En este tutorial usamos la propiedad innerHTML para recuperar el contenido de un elemento HTML. <br>
+
+Sin embargo, aprender los otros métodos anteriores es útil para comprender la estructura de árbol y la navegación del DOM.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            
+          </p>
+          <h1 class="mb-4">Nodos raíz DOM</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>&nbsp;</p>
+<p><span>Hay dos propiedades especiales que permiten el acceso al documento completo:</span></p>
+<ul>
+<li><code class="w3-codespan">document.body</code><span>- El cuerpo del documento.</span></li>
+<li><code class="w3-codespan">document.documentElement</code><span>- El documento completo</span></li>
+</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+<p>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;body&gt;</p>
+<p>&lt;h2&gt;JavaScript HTMLDOM&lt;/h2&gt;<br />&lt;p&gt;Mostrando document.body&lt;/p&gt;</p>
+<p>&lt;p id="demo"&gt;&lt;/p&gt;</p>
+<p>&lt;script&gt;<br />document.getElementById("demo").innerHTML = document.body.innerHTML;<br />&lt;/script&gt;</p>
+<p>&lt;/body&gt;<br />&lt;/html&gt;</p>
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left">
+                    <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTMLDOM</h2>
+<p>Mostrando document.body</p>
+
+<h2>JavaScript HTMLDOM</h2>
+<p>Mostrando document.body</p>
+
+
+</body>
+</html>
+                  </pre>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+
+
+    <div class="container-fluid py-1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+<p>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;body&gt;</p>
+<p>&lt;h2&gt;JavaScript HTMLDOM&lt;/h2&gt;<br />&lt;p&gt;Mostrando document.documentElement&lt;/p&gt;</p>
+<p>&lt;p id="demo"&gt;&lt;/p&gt;</p>
+<p>&lt;script&gt;<br />document.getElementById("demo").innerHTML = document.documentElement.innerHTML;<br />&lt;/script&gt;</p>
+<p>&lt;/body&gt;<br />&lt;/html&gt;</p>
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left">
+                    <<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTMLDOM</h2>
+<p>Mostrando document.documentElement</p>
+
+<h2>JavaScript HTMLDOM</h2>
+<p>Mostrando document.documentElement</p>
+
+</body>
+</html>
+                  </pre>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Registration Start -->
+
+
+<div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            
+          </p>
+          <h1 class="mb-4">La propiedad nodeName</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p><span>La&nbsp;</span><code class="w3-codespan">nodeName</code><span>propiedad especifica el nombre de un nodo.</span></p>
+<ul>
+<li><span>nodeName es de solo lectura</span></li>
+<li><span>nodeName de un nodo de elemento es el mismo que el nombre de la etiqueta</span></li>
+<li><span>nodeName de un nodo de atributo es el nombre del atributo</span></li>
+<li><span>nodeName de un nodo de texto siempre es #text</span></li>
+<li><span>nodeName del nodo del documento siempre es #document</span></li>
+</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid py-1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+<p>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;body&gt;</p>
+<p>&lt;h1 id="id0x"&gt;Mi texto&lt;/h1&gt;<br />&lt;p id="id0y"&gt;&lt;/p&gt;</p>
+<p>&lt;script&gt;<br />document.getElementById("id0y").innerHTML = document.getElementById("id0x").nodeName;<br />&lt;/script&gt;</p>
+<p>&lt;/body&gt;<br />&lt;/html&gt;</p>
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left">
+                    <!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id0x">Mi texto</h1>
+<p id="id0y"></p>
+
+<script>
+document.getElementById("id0y").innerHTML = document.getElementById("id0x").nodeName;
+</script>
+
+</body>
+</html>
+                  </pre>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+
+
+<!-- Class Start -->
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            
+          </p>
+          <h1 class="mb-4">La propiedad nodeValue </h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p><span>La&nbsp;</span><code class="w3-codespan">nodeValue</code><span>propiedad especifica el valor de un nodo.</span></p>
+<ul>
+<li><span>nodeValue para nodos de elementos es</span><code class="w3-codespan">null</code></li>
+<li><span>nodeValue para nodos de texto es el texto mismo</span></li>
+<li><span>nodeValue para los nodos de atributo es el valor del atributo</span></li>
+</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+     <!-- Class Start -->
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            
+          </p>
+          <h1 class="mb-4">La propiedad de tipo de nodo</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>La propiedad nodeType  es de solo lectura. Devuelve el tipo de un nodo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Registration Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <p class="section-title pr-5">
+          <span class="pr-2">Ejemplo</span>
+        </p>
+        
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+<p>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;body&gt;</p>
+<p>&lt;h1 id="xd"&gt;WEB PAGE&lt;/h1&gt;<br />&lt;p id="xy"&gt;&lt;/p&gt;</p>
+<p>&lt;script&gt;<br />document.getElementById("xy").innerHTML = document.getElementById("xd").nodeType;<br />&lt;/script&gt;</p>
+<p>&lt;/body&gt;<br />&lt;/html&gt;</p>
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="xd">WEB PAGE</h1>
+<p id="xy"></p>
+
+<script>
+document.getElementById("xy").innerHTML = document.getElementById("xd").nodeType;
+</script>
+
+</body>
+</html>
+                  </pre>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Registration End -->
+   
+<!-- Class Start -->
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            
+          </p>
+          <h1 class="mb-4">Las propiedades de tipo de nodo más importantes son: </h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <table class="table">
+<tbody>
+<tr>
+<th>Node</th>
+<th>TIPO</th>
+<th>Ejemplo</th>
+</tr>
+<tr>
+<td>ELEMENT_NODE</td>
+<td>1</td>
+<td>&lt;h1 class="heading"&gt;W3Schools&lt;/h1&gt;</td>
+</tr>
+<tr>
+<td>ATTRIBUTE_NODE</td>
+<td>2</td>
+<td>&nbsp;class = "heading" (obsoleta)</td>
+</tr>
+<tr>
+<td>TEXT_NODE</td>
+<td>3</td>
+<td>W3Schools</td>
+</tr>
+<tr>
+<td>COMMENT_NODE</td>
+<td>8</td>
+<td>&lt;!-- Comentario --&gt;</td>
+</tr>
+<tr>
+<td>DOCUMENT_NODE</td>
+<td>9</td>
+<td>El propio documento HTML (el padre de &lt;html&gt;)</td>
+</tr>
+<tr>
+<td>DOCUMENT_TYPE_NODE</td>
+<td>10</td>
+<td>&lt;!Doctype html&gt;</td>
+</tr>
+</tbody>
+</table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
+    >
+      <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+          <a
+            href=""
+            class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+            style="font-size: 40px; line-height: 40px"
+          >
+            <i class="bi bi-laptop-fill"></i>
+            <span class="text-white">GRUPO6</span>
+          </a>
+          <p>
+            
+          </p>
+          <div class="d-flex justify-content-start mt-4">
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h3 class="text-primary mb-4">INFO</h3>
+          <div class="d-flex">
+            <h4 class="fa fa-map-marker-alt text-primary"></h4>
+            <div class="pl-3">
+              <h5 class="text-white">Ubicación</h5>
+              <p>Sangolqui, Ecuador</p>
+            </div>
+          </div>
+          
+          
+        </div>
+        
+        
+      </div>
+      <div
+        class="container-fluid pt-5"
+        style="border-top: 1px solid rgba(23, 162, 184, 0.2) ;"
+      >
+        <p class="m-0 text-center text-white">
+          &copy;
+          <a class="text-primary font-weight-bold" href="#">GRUPO6</a>.
+          All Rights Reserved.
+
+          <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+          Designed by
+          <a class="text-primary font-weight-bold" href="#"
+            >Rafch & FrameLotus</a
+          >
+          <br />
+        </p>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

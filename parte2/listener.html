@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript HTML DOM EventListener</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+      <nav
+        class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
+      >
+        <a
+          href="index.html"
+          class="navbar-brand font-weight-bold text-secondary"
+          style="font-size: 50px"
+        >
+          <i class="bi bi-laptop-fill"></i>
+          <span class="text-primary">GRUPO6</span>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary mb-5">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center"
+        style="min-height: 400px"
+      >
+        <h3 class="display-3 font-weight-bold text-white">Event Listener</h3>
+        <div class="d-inline-flex text-white">
+          <p class="m-0"><a class="text-white" href="index.html">Home</a></p>
+          <p class="m-0 px-2">/</p>
+          <p class="m-0">Event Listener</p>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Class Start -->
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            <span class="px-2">JavaScript HTML DOM EventListener</span>
+          </p>
+          <h1 class="mb-4">El método addEventListener()</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Class End -->
+    <!-- Class Start -->
+    <div class="container-fluid pt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              Agregue un detector de eventos que se active cuando un usuario haga clic en un botón:
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Class End -->
+    <!-- Registration Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <p class="section-title pr-5">
+          <span class="pr-2">Ejemplo</span>
+        </p>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+                    
+&lt;h2&gt;addEventListener()&lt;/h2&gt;
+                    
+&lt;p&gt;Este ejemplo utiliza el método addEventListener() para adjuntar un evento de clic a un botón.&lt;/p&gt;
+                    
+&lt;button id="myBtn1"&gt;Intentalo&lt;/button&gt;
+                    
+&lt;p id="demo1"&gt;&lt;/p&gt;
+                    
+&lt;script&gt;
+  document.getElementById("myBtn1").addEventListener("click", displayDate);
+                    
+  function displayDate() {
+    document.getElementById("demo1").innerHTML = Date();
+  }
+&lt;/script&gt;
+                    
+&lt;/body&gt;
+&lt;/html&gt;             
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left"><code>
+                    <!DOCTYPE html>
+                    <html>
+                    <body>
+                    
+                    <h2>addEventListener()</h2>
+                    
+                    <p>Este ejemplo utiliza el método addEventListener() para adjuntar un evento de clic a un botón.</p>
+                    
+                    <button id="myBtn1">Intentalo/button>
+                    
+                    <p id="demo1"></p>
+                    
+                    <script>
+                    document.getElementById("myBtn1").addEventListener("click", displayDate);
+                    
+                    function displayDate() {
+                      document.getElementById("demo1").innerHTML = Date();
+                    }
+                    </script>
+                    
+                    </body>
+                    </html> 
+                  </pre></code>
+                </p>
+              </div> 
+            </div>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item">El addEventListener() método adjunta un controlador de eventos al elemento especificado.</li>
+            <li class="list-group-item">El addEventListener() método adjunta un controlador de eventos a un elemento sin sobrescribir los controladores de eventos existentes.</li>
+            <li class="list-group-item">Puede agregar muchos controladores de eventos a un elemento.</li>
+            <li class="list-group-item">Puede agregar muchos controladores de eventos del mismo tipo a un elemento, es decir, dos eventos de "clic".</li>
+            <li class="list-group-item">Puede agregar detectores de eventos a cualquier objeto DOM, no solo elementos HTML. es decir, el objeto ventana.</li>
+            <li class="list-group-item">El addEventListener() método facilita el control de cómo reacciona el evento al burbujeo.</li>
+            <li class="list-group-item">Al usar el addEventListener() método, el JavaScript se separa del marcado HTML, para una mejor legibilidad y le permite agregar detectores de eventos incluso cuando no controla el marcado HTML.</li>
+            <li class="list-group-item">Puede eliminar fácilmente un detector de eventos utilizando el removeEventListener() método.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Registration End -->
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="text-center pb-2">
+      <h1 class="mb-4">Sintaxis</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body">
+            element.addEventListener(event, function, useCapture);
+          </div>
+        </div>
+        <p>
+          El primer parámetro es el tipo de evento (como " click" o " mousedown" o cualquier otro evento HTML DOM ).
+
+          <br>El segundo parámetro es la función que queremos llamar cuando ocurra el evento.
+
+          <br>El tercer parámetro es un valor booleano que especifica si se debe usar el burbujeo de eventos o la captura de eventos. Este parámetro es opcional.
+        </p>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+    
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="text-center pb-2">
+      <h1 class="mb-4">Agregar un controlador de eventos a un elemento</h1>
+    </div>
+    <div class="row">
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <p>
+      Alerta "¡Hola mundo!" cuando el usuario hace clic en un elemento:
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+                
+&lt;h2&gt;addEventListener()&lt;/h2&gt;
+                
+&lt;p&gt;Este ejemplo utiliza el método addEventListener() para adjuntar un evento de clic a un botón.&lt;/p>
+                
+&lt;button id="myBtn2"&gt;Intentalo&lt;/button&gt;
+                
+&lt;script&gt;
+  document.getElementById("myBtn2").addEventListener("click", function() {
+    alert("Hola Mundo!");
+  });
+&lt;/script&gt;
+                
+&lt;/body&gt;
+&lt;/html&gt;
+                            
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <body>
+                
+                <h2>addEventListener()</h2>
+                
+                <p>Este ejemplo utiliza el método addEventListener() para adjuntar un evento de clic a un botón.</p>
+                
+                <button id="myBtn2">Intentalo</button>
+                
+                <script>
+                document.getElementById("myBtn2").addEventListener("click", function() {
+                  alert("Hola Mundo!");
+                });
+                </script>
+                
+                </body>
+                </html>
+              </pre>
+            </p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+<!-- Registration End -->
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          También puede hacer referencia a una función externa "nombrada":
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <p>
+      Alerta "¡Hola mundo!" cuando el usuario hace clic en un elemento:
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+                
+&lt;h2&gt;addEventListener()&lt;/h2&gt;
+                
+&lt;p&gt;Este ejemplo usa el método addEventListener() para ejecutar una función cuando un usuario hace clic en un botón.&lt;/p&gt;
+                
+&lt;button id="myBtn3">Intentalo&lt;/button&gt;
+                
+&lt;script&gt;
+  document.getElementById("myBtn3").addEventListener("click", myFunction);
+                
+  function myFunction() {
+    alert ("Hola Mundo!");
+  }
+&lt;/script&gt;
+                
+&lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <body>
+                                
+                <h2>addEventListener()</h2>
+                                
+                <p>Este ejemplo usa el método addEventListener() para ejecutar una función cuando un usuario hace clic en un botón.</p>
+                                
+                <button id="myBtn3">Intentalo</button>
+                                
+                <script>
+                  document.getElementById("myBtn3").addEventListener("click", myFunction);
+                                
+                  function myFunction() {
+                    alert ("Hola Mundo!");
+                  }
+                </script>
+                                
+                </body>
+                </html>
+              </pre>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Registration End -->      
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="text-center pb-2">
+      <h1 class="mb-4">Agregue muchos controladores de eventos al mismo elemento</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          El addEventListener()método le permite agregar muchos eventos al mismo elemento, sin sobrescribir los eventos existentes:
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+                
+&lt;h2&gt;addEventListener()&lt;/h2&gt;
+                
+&lt;p&gt;Este ejemplo usa el método addEventListener() para agregar dos eventos de clic al mismo botón.&lt;/p&gt;
+                
+&lt;button id="myBtn4"&gt;Intentalo&lt;/button&gt;
+                
+&lt;script&gt;
+  var x = document.getElementById("myBtn4");
+  x.addEventListener("click", myFunction);
+  x.addEventListener("click", someOtherFunction);
+                
+  function myFunction() {
+    alert ("Hola Mundo!");
+  }
+                
+  function someOtherFunction() {
+    alert ("¡Esta función también se ejecutó!");
+  }
+&lt;/script&gt;
+                
+&lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <body>
+                
+                <h2>addEventListener()</h2>
+                
+                <p>Este ejemplo usa el método addEventListener() para agregar dos eventos de clic al mismo botón.</p>
+                
+                <button id="myBtn4">Intentalo</button>
+                
+                <script>
+                var x = document.getElementById("myBtn4");
+                x.addEventListener("click", myFunction);
+                x.addEventListener("click", someOtherFunction);
+                
+                function myFunction() {
+                  alert ("Hola Mundo!");
+                }
+                
+                function someOtherFunction() {
+                  alert ("¡Esta función también se ejecutó!");
+                }
+                </script>
+                
+                </body>
+                </html>
+              </pre>
+            </p>
+          </div>
+  
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- Registration End -->
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="text-center pb-2">
+      <h1 class="mb-4">Agregue un controlador de eventos al objeto de la ventana</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          El addEventListener()método le permite agregar detectores de eventos en cualquier objeto HTML DOM, como elementos HTML, el documento HTML, el objeto de ventana u otros objetos que admitan eventos, como el xmlHttpRequestobjeto.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <p>
+      Agregue un detector de eventos que se activa cuando un usuario cambia el tamaño de la ventana:
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+                
+&lt;h2&gt;addEventListener()&lt;/h2&gt;
+                
+&lt;p&gt;Este ejemplo usa el método addEventListener() en el objeto de ventana.&lt;/p&gt;
+                
+&lt;p&gt;
+  Intente cambiar el tamaño de esta ventana del navegador para activar el controlador de eventos 'cambiar el tamaño'.&lt;/p&gt;
+                
+&lt;p id="demo5"&gt;&lt;/p&gt;
+                
+&lt;script&gt;
+  window.addEventListener("resize", function(){
+    document.getElementById("demo5").innerHTML = Math.random();
+  });
+&lt;/script&gt;
+                
+&lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <body>
+                
+                <h2>addEventListener()</h2>
+                
+                <p>Este ejemplo usa el método addEventListener() en el objeto de ventana.</p>
+                
+                <p>Intente cambiar el tamaño de esta ventana del navegador para activar el controlador de eventos 'cambiar el tamaño'.</p>
+                
+                <p id="demo5"></p>
+                
+                <script>
+                window.addEventListener("resize", function(){
+                  document.getElementById("demo5").innerHTML = Math.random();
+                });
+                </script>
+                
+                </body>
+                </html>
+              </pre>
+            </p>
+          </div>
+  
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- Registration End -->
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="text-center pb-2">
+      <h1 class="mb-4">Pasando Parámetros</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          Al pasar valores de parámetros, use una "función anónima" que llame a la función especificada con los parámetros:
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+                
+&lt;h2&gt;addEventListener()&lt;/h2&gt;
+                
+&lt;p&gt;Este ejemplo demuestra cómo pasar valores de parámetros cuando se usa el método addEventListener().&lt;/p&gt;
+                
+&lt;p&gt;Haga clic en el botón para realizar un cálculo.&lt;/p&gt;
+                
+&lt;button id="myBtn6"&gt;Intentalo&lt;/button&gt;
+                
+&lt;p id="demo6"&gt;&lt;/p&gt;
+                
+&lt;script&gt;
+  let p1 = 5;
+  let p2 = 7;
+  document.getElementById("myBtn6").addEventListener("click", function() {
+    myFunction(p1, p2);
+  });
+                
+  function myFunction(a, b) {
+    document.getElementById("demo6").innerHTML = a * b;
+  }
+&lt;/script&gt;
+                
+&lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <body>
+                
+                <h2>addEventListener()</h2>
+                
+                <p>Este ejemplo demuestra cómo pasar valores de parámetros cuando se usa el método addEventListener().</p>
+                
+                <p>Haga clic en el botón para realizar un cálculo.</p>
+                
+                <button id="myBtn6">Intentalo</button>
+                
+                <p id="demo6"></p>
+                
+                <script>
+                let p1 = 5;
+                let p2 = 7;
+                document.getElementById("myBtn6").addEventListener("click", function() {
+                  myFunction(p1, p2);
+                });
+                
+                function myFunction(a, b) {
+                  document.getElementById("demo6").innerHTML = a * b;
+                }
+                </script>
+                
+                </body>
+                </html>
+              </pre>
+            </p>
+          </div>
+  
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- Registration End -->
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="text-center pb-2">
+      <h1 class="mb-4">¿Burbujeo de eventos o captura de eventos?</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          Hay dos formas de propagación de eventos en HTML DOM, burbujeo y captura.
+
+          <br>La propagación de eventos es una forma de definir el orden de los elementos cuando ocurre un evento. Si tiene un elemento &lt;p&gt; dentro de un elemento &lt;div&gt; y el usuario hace clic en el elemento &lt;p&gt;, ¿qué evento de "clic" de elemento debe manejarse primero?
+
+          <br>Al burbujear , el evento del elemento más interno se maneja primero y luego el externo: el evento de clic del elemento &lt;p&gt; se maneja primero, luego el evento de clic del elemento &lt;div&gt;.
+
+          <br>Al capturar el evento del elemento más externo se maneja primero y luego el interno: el evento de clic del elemento &lt;div&gt; se manejará primero, luego el evento de clic del elemento &lt;p&gt;.
+
+          <br>Con el método addEventListener() puedes especificar el tipo de propagación usando el parámetro "useCapture":
+        </p>
+        <div class="card">
+          <div class="card-body">
+            addEventListener(event, function, useCapture);
+          </div>
+        </div>
+        <p>
+          <br>El valor predeterminado es falso, que usará la propagación burbujeante, cuando el valor se establece en verdadero, el evento usa la propagación de captura.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;style&gt;
+                #myDiv1, #myDiv2 {
+                  background-color: coral;
+                  padding: 50px;
+                }
+                
+                #myP1, #myP2 {
+                  background-color: white; 
+                  font-size: 20px;
+                  border: 1px solid;
+                  padding: 20px;
+                }
+                &lt;/style&gt;
+                &lt;meta content="text/html; charset=utf-8" http-equiv="Content-Type"&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                
+                &lt;h2&gt;addEventListener()&lt;/h2&gt;
+                
+                &lt;div id="myDiv1"&gt;
+                  &lt;h2&gt;Burbuja:&lt;/h2&gt;
+                  &lt;p id="myP1">Clikeame!&lt;/p&gt;
+                &lt;/div&gt;&lt;br&gt;
+                
+                &lt;div id="myDiv2"&gt;
+                  &lt;h2&gt;Captura:&lt;/h2&gt;
+                  &lt;p id="myP2">Clikeame!&lt;/p&gt;
+                &lt;/div&gt;
+                
+                &lt;script&gt;
+                document.getElementById("myP1").addEventListener("click", function() {
+                  alert("¡Hiciste clic en el elemento blanco!");
+                }, false);
+                
+                document.getElementById("myDiv1").addEventListener("click", function() {
+                  alert("¡Hiciste clic en el elemento naranja!");
+                }, false);
+                
+                document.getElementById("myP2").addEventListener("click", function() {
+                  alert("¡Hiciste clic en el elemento blanco!");
+                }, true);
+                
+                document.getElementById("myDiv2").addEventListener("click", function() {
+                  alert("¡Hiciste clic en el elemento naranja!");
+                }, true);
+                &lt;/script&gt;
+                
+                &lt;/body&gt;
+                &lt;/html&gt;
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <head>
+                <style>
+                #myDiv1, #myDiv2 {
+                  background-color: coral;
+                  padding: 50px;
+                }
+                
+                #myP1, #myP2 {
+                  background-color: white; 
+                  font-size: 20px;
+                  border: 1px solid;
+                  padding: 20px;
+                }
+                </style>
+                <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+                </head>
+                <body>
+                
+                <h2>addEventListener()</h2>
+                
+                <div id="myDiv1">
+                  <h2>Burbuja:</h2>
+                  <p id="myP1">Clikeame!</p>
+                </div><br>
+                
+                <div id="myDiv2">
+                  <h2>Captura:</h2>
+                  <p id="myP2">Clikeame!</p>
+                </div>
+                
+                <script>
+                document.getElementById("myP1").addEventListener("click", function() {
+                  alert("¡Hiciste clic en el elemento blanco!");
+                }, false);
+                
+                document.getElementById("myDiv1").addEventListener("click", function() {
+                  alert("¡Hiciste clic en el elemento naranja!");
+                }, false);
+                
+                document.getElementById("myP2").addEventListener("click", function() {
+                  alert("¡Hiciste clic en el elemento blanco!");
+                }, true);
+                
+                document.getElementById("myDiv2").addEventListener("click", function() {
+                  alert("¡Hiciste clic en el elemento naranja!");
+                }, true);
+                </script>
+                
+                </body>
+                </html>
+              </pre>
+            </p>
+          </div>
+  
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- Registration End -->
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="text-center pb-2">
+      <h1 class="mb-4">Mas Ejemplos</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h4>Onmousedown y Onmouseup</h4>
+        <p>
+          Cambiar una imagen cuando un usuario mantiene presionado el botón del mouse.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h4>El método removeEventListener()</h4>
+        <p>
+          El removeEventListener()método elimina los controladores de eventos que se han adjuntado con el método addEventListener():
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;style&gt;
+  #myDIV {
+    background-color: coral;
+    border: 1px solid;
+    padding: 50px;
+    color: white;
+    font-size: 20px;
+  }
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+                
+&lt;h2&gt;removeEventListener()&lt;/h2&gt;
+                
+&lt;div id="myDIV"&gt;
+
+  &lt;p&gt;Este elemento div tiene un controlador de eventos onmousemove que muestra un número aleatorio cada vez que mueve el mouse dentro de este campo naranja.&lt;/p&gt;
+  &lt;p&gt;Haga clic en el botón para eliminar el controlador de eventos del div.&lt;/p&gt;
+  &lt;button onclick="removeHandler()" id="myBtn7"&gt;Eliminar&lt;/button&gt;
+
+&lt;/div&gt;
+                
+&lt;p id="demo7"&gt;&lt;/p&gt;
+                
+  &lt;script&gt;
+    document.getElementById("myDIV").addEventListener("mousemove", myFunction);
+                
+    function myFunction() {
+      document.getElementById("demo7").innerHTML = Math.random();
+    }
+                
+    function removeHandler() {
+      document.getElementById("myDIV").removeEventListener("mousemove", myFunction);
+    }
+&lt;/script&gt;
+                
+&lt;/body&gt;
+
+&lt;/html&gt;
+                
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <head>
+                <style>
+                #myDIV {
+                  background-color: coral;
+                  border: 1px solid;
+                  padding: 20px;
+                  color: white;
+                  font-size: 10px;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <h2>removeEventListener()</h2>
+                
+                <div id="myDIV">
+                  <p>Este elemento div tiene un controlador de eventos onmousemove <br>que muestra un número aleatorio cada vez que <br>mueve el mouse dentro de este campo naranja.</p>
+                  <p>Haga clic en el botón para eliminar el controlador de eventos del div.</p>
+                  <button onclick="removeHandler()" id="myBtn7">Eliminar</button>
+                </div>
+                
+                <p id="demo7"></p>
+                
+                <script>
+                document.getElementById("myDIV").addEventListener("mousemove", myFunction);
+                
+                function myFunction() {
+                  document.getElementById("demo7").innerHTML = Math.random();
+                }
+                
+                function removeHandler() {
+                  document.getElementById("myDIV").removeEventListener("mousemove", myFunction);
+                }
+                </script>
+                </body>
+                </html>
+              </pre>
+            </p>
+          </div>
+  
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- Registration End -->
+<!-- Footer Start -->
+    <div
+      class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
+    >
+      <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+          <a
+            href=""
+            class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+            style="font-size: 40px; line-height: 40px"
+          >
+            <i class="bi bi-laptop-fill"></i>
+            <span class="text-white">GRUPO6</span>
+          </a>
+          <p>
+            
+          </p>
+          <div class="d-flex justify-content-start mt-4">
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h3 class="text-primary mb-4">INFO</h3>
+          <div class="d-flex">
+            <h4 class="fa fa-map-marker-alt text-primary"></h4>
+            <div class="pl-3">
+              <h5 class="text-white">Ubicación</h5>
+              <p>Sangolqui, Ecuador</p>
+            </div>
+          </div>
+          
+          
+        </div>
+        
+        
+      </div>
+      <div
+        class="container-fluid pt-5"
+        style="border-top: 1px solid rgba(23, 162, 184, 0.2) ;"
+      >
+        <p class="m-0 text-center text-white">
+          &copy;
+          <a class="text-primary font-weight-bold" href="#">GRUPO6</a>.
+          All Rights Reserved.
+
+          <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+          Designed by
+          <a class="text-primary font-weight-bold" href="#"
+            >Rafch & FrameLotus</a
+          >
+          <br />
+        </p>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript HTML DOM Eventos</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+      <nav
+        class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
+      >
+        <a
+          href="index.html"
+          class="navbar-brand font-weight-bold text-secondary"
+          style="font-size: 50px"
+        >
+          <i class="bi bi-laptop-fill"></i>
+          <span class="text-primary">GRUPO6</span>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary mb-5">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center"
+        style="min-height: 400px"
+      >
+        <h3 class="display-3 font-weight-bold text-white">Eventos</h3>
+        <div class="d-inline-flex text-white">
+          <p class="m-0"><a class="text-white" href="index.html">Home</a></p>
+          <p class="m-0 px-2">/</p>
+          <p class="m-0">Eventos</p>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Class Start -->
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            <span class="px-2">JavaScript HTML DOM Eventos</span>
+          </p>
+          <h1 class="mb-4">Reaccionar a los eventos</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              Un JavaScript se puede ejecutar cuando ocurre un evento, como cuando un usuario hace clic en un elemento HTML.
+
+              <br>Para ejecutar código cuando un usuario hace clic en un elemento, agregue código JavaScript a un atributo de evento HTML:
+            </p>
+            <ul class="list-group">
+              <li class="list-group-item">onclick=JavaScript</li>
+            </ul>
+            <p>
+              <br>Ejemplos de eventos HTML:
+            </p>
+            <ul class="list-group">
+              <li class="list-group-item">Cuando un usuario hace clic con el mouse</li>
+              <li class="list-group-item">Cuando una página web ha cargado</li>
+              <li class="list-group-item">Cuando se ha cargado una imagen</li>
+              <li class="list-group-item">Cuando el mouse se mueve sobre un elemento</li>
+              <li class="list-group-item">Cuando se cambia un campo de entrada</li>
+              <li class="list-group-item">Cuando se envía un formulario HTML</li>
+              <li class="list-group-item">Cuando un usuario pulsa una tecla</li>
+            </ul>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Class End -->
+    <!-- Class Start -->
+    <div class="container-fluid pt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              En este ejemplo, el contenido del &lt;h1&gt;elemento cambia cuando un usuario hace clic en él:
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Class End -->
+    <!-- Registration Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <p class="section-title pr-5">
+          <span class="pr-2">Ejemplo</span>
+        </p>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;body&gt;
+                    
+&lt;h2&gt;Ejemplo Evento&lt;/h2&gt;
+
+&lt;h2 onclick="this.innerHTML='OH NOO!'"&gt;Da click en el siguiente texto!&lt;/h2&gt;
+                    
+&lt;/body&gt;
+
+&lt;/html&gt;             
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left"><code>
+                    <!DOCTYPE html>
+                    <html>
+                    <body>                
+                    <h2>Ejemplo Evento</h2>
+                    <h2 onclick="this.innerHTML='OH NOO!'">Da click en el siguiente texto!</h2>               
+                    </body>
+                    </html>  
+                  </pre></code>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Registration End -->
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              En este ejemplo, se llama a una función desde el controlador de eventos:
+            </p>
+          </div>
+        </div>
+      </div>
+</div>
+    <!-- Class End -->
+    <!-- Registration Start -->
+<div class="container-fluid py-5">
+      <div class="container">
+        <p class="section-title pr-5">
+          <span class="pr-2">Ejemplo</span>
+        </p>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+&lt;body&gt;
+                    
+&lt;h2&gt;Ejemplo Evento&lt;/h2&gt;
+&lt;h2 onclick="changeText(this)">Da click en el siguiente texto!&lt;/h2&gt;
+                    
+&lt;script&gt;
+  function changeText(id) {
+    id.innerHTML = "Oh nooo!!";
+  }
+&lt;/script&gt;
+                    
+&lt;/body&gt;
+&lt;/html&gt;               
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left">
+                    <!DOCTYPE html>
+                    <html>
+                    <body>
+                    
+                    <h2>Ejemplo Evento</h2>
+                    <h2 onclick="changeText(this)">Da click en el siguiente texto!</h2>
+                    
+                    <script>
+                    function changeText(id) {
+                      id.innerHTML = "Oh nooo!!";
+                    }
+                    </script>
+                    
+                    </body>
+                    </html>
+                  </pre>
+                </p>
+              </div>
+              
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <!-- Registration End -->
+
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="text-center pb-2">
+      <h1 class="mb-4">Atributos de eventos HTML</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          Para asignar eventos a elementos HTML, puede usar atributos de eventos.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <p>
+      Asigne un evento onclick a un elemento de botón:
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;body&gt;
+                
+&lt;h2&gt;Evento Ejemplo&lt;/h2&gt;
+
+&lt;p&gt;Da click para visualizar la fecha&lt;/p&gt;
+                
+&lt;button onclick="displayDate()">El tiempo es?&lt;/button&gt;
+                
+&lt;script&gt;
+  function displayDate() {
+    document.getElementById("demo1").innerHTML = Date();
+  }
+&lt;/script&gt;
+                
+&lt;p id="demo1">&lt;/p&gt;
+                
+&lt;/body&gt;
+
+&lt;/html&gt;              
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <body>
+                
+                <h2>Evento Ejemplo</h2>
+                <p>Da click para visualizar la fecha</p>
+                
+                <button onclick="displayDate()">El tiempo es?</button>
+                
+                <script>
+                function displayDate() {
+                  document.getElementById("demo1").innerHTML = Date();
+                }
+                </script>
+                
+                <p id="demo1"></p>
+                
+                </body>
+                </html> 
+              </pre>
+            </p>
+          </div>
+        </div>
+      </div>
+      <p>
+        <br>En el ejemplo anterior, se ejecutará una función nombrada displayDatecuando se haga clic en el botón.
+      </p>  
+    </div>
+  </div>
+</div>
+<!-- Registration End -->
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="text-center pb-2">
+      <h1 class="mb-4">Asignar eventos utilizando el HTML DOM</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          El HTML DOM le permite asignar eventos a elementos HTML usando JavaScript:
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <p>
+      Asigne un evento onclick a un elemento de botón:
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;body&gt;
+                
+&lt;h2&gt;Ejemplo Evento&lt;/h2&gt;
+
+&lt;p&gt;Dar click en "Intentalo!" para ejecutar la función displayDate()&lt;/p&gt;
+                
+&lt;button id="myBtn2"&gt;Intentalo!&lt;/button&gt;
+                
+&lt;p id="demo2"&gt;&lt;/p&gt;
+                
+&lt;script&gt;
+  document.getElementById("myBtn2").onclick = displayDate;
+                
+  function displayDate() {
+    document.getElementById("demo2").innerHTML = Date();
+  }
+&lt;/script&gt;
+                
+&lt;/body&gt;
+
+&lt;/html&gt; 
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <body>
+                
+                <h2>Ejemplo Evento</h2>
+                <p>Dar click en "Intentalo!" para ejecutar la función displayDate()</p>
+                
+                <button id="myBtn2">Intentalo!</button>
+                
+                <p id="demo2"></p>
+                
+                <script>
+                document.getElementById("myBtn2").onclick = displayDate;
+                
+                function displayDate() {
+                  document.getElementById("demo2").innerHTML = Date();
+                }
+                </script>
+                
+                </body>
+                </html> 
+              </pre>
+            </p>
+          </div>
+        </div>
+      </div>
+      <p>
+        En el ejemplo anterior, displayDate se asigna una función con nombre a un elemento HTML con la extensión id="myBtn2".
+
+        <br>La función se ejecutará cuando se haga clic en el botón.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Registration End -->      
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="text-center pb-2">
+      <h1 class="mb-4">Los eventos onload y onunload</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          Los eventos onloady onunloadse activan cuando el usuario entra o sale de la página.
+
+          <br>El onloadevento se puede utilizar para comprobar el tipo de navegador y la versión del navegador del visitante, y cargar la versión adecuada de la página web en función de la información.
+
+          <br>Los eventos onloady onunloadse pueden utilizar para tratar con las cookies.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+&gt;!DOCTYPE html&gt;
+&gt;html&gt;
+&gt;body onload="checkCookies()"&gt;
+                
+&gt;h2&gt;Evento Ejemplo&gt;/h2&gt;
+                
+&gt;p id="demo3">&gt;/p&gt;
+                
+&gt;script&gt;
+  function checkCookies() {
+    var text = "";
+    if (navigator.cookieEnabled == true) {
+      text = "Cookies esta habilitado.";
+    } else {
+      text = "Cookies no esta habilitado.";
+    }
+      document.getElementById("demo3").innerHTML = text;
+    }
+&gt;/script&gt;
+                
+&gt;/body&gt;
+&gt;/html&gt;
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <body onload="checkCookies()">
+                
+                <h2>Evento Ejemplo</h2>
+                
+                <p id="demo3"></p>
+                
+                <script>
+                function checkCookies() {
+                  var text = "";
+                  if (navigator.cookieEnabled == true) {
+                    text = "Cookies esta habilitado.";
+                  } else {
+                    text = "Cookies no esta habilitado.";
+                  }
+                  document.getElementById("demo3").innerHTML = text;
+                }
+                </script>
+                
+                </body>
+                </html>
+              </pre>
+            </p>
+          </div>
+  
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- Registration End -->
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="text-center pb-2">
+      <h1 class="mb-4">El evento onchange</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          El onchangeevento se usa a menudo en combinación con la validación de campos de entrada.
+          <br>A continuación se muestra un ejemplo de cómo utilizar onchange. La upperCase() función se llamará cuando un usuario cambie el contenido de un campo de entrada.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+                
+&lt;h2&gt;Evento Ejemplo&lt;/h2&gt;
+Escribe tu nombre: &lt;input type="text" id="fname" onchange="upperCase()"&gt;
+&lt;p&gt;Cuando abandona el campo de entrada, se activa una función que transforma el texto de entrada en mayúsculas.&lt;/p&gt;
+                
+&lt;script&gt;
+  function upperCase() {
+    const x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+  }
+&lt;/script&gt;
+                
+&lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <body>
+                
+                <h2>Evento Ejemplo</h2>
+                Escribe tu nombre: <input type="text" id="fname" onchange="upperCase()">
+                <p>Cuando abandona el campo de entrada, se activa una función que transforma el texto de entrada en mayúsculas.</p>
+                
+                <script>
+                function upperCase() {
+                  const x = document.getElementById("fname");
+                  x.value = x.value.toUpperCase();
+                }
+                </script>
+                
+                </body>
+                </html>
+              </pre>
+            </p>
+          </div>
+  
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- Registration End -->
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="text-center pb-2">
+      <h1 class="mb-4">Los eventos onmouseover y onmouseout</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          Los eventos onmouseovery onmouseoutse pueden usar para activar una función cuando el usuario pasa el mouse sobre o fuera de un elemento HTML:
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+                
+  &lt;div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+    style="background-color:#D94A38;width:120px;height:20px;padding:40px;"&gt;
+      Pasa el cursor sobre mi!&lt;/div&gt;
+                
+&lt;script>
+  function mOver(obj) {
+    obj.innerHTML = "Gracias"
+  }
+                
+  function mOut(obj) {
+    obj.innerHTML = "Pasa el cursor sobre mi!"
+  }
+&lt;/script&gt;
+                
+&lt;/body&gt;
+&lt;/html&gt; 
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <body>
+                
+                <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+                style="background-color:#D94A38;width:100%;height:30px;padding:40px;">
+                Pasa el cursor sobre mi!</div>
+                
+                <script>
+                function mOver(obj) {
+                  obj.innerHTML = "Gracias"
+                }
+                
+                function mOut(obj) {
+                  obj.innerHTML = "Pasa el cursor sobre mi!"
+                }
+                </script>
+                
+                </body>
+                </html> 
+              </pre>
+            </p>
+          </div>
+  
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- Registration End -->
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="text-center pb-2">
+      <h1 class="mb-4">Los eventos onmousedown, onmouseup y onclick</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>
+          Los eventos onmousedown, onmouseupy onclickson todos partes de un clic del mouse. Primero, cuando se hace clic en un botón del mouse, se activa el evento onmousedown, luego, cuando se suelta el botón del mouse, se activa el evento onmouseup, finalmente, cuando se completa el clic del mouse, se activa el evento onclick.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+                
+&lt;div onmousedown="mDown(this)" onmouseup="mUp(this)"
+  style="background-color:#D94A38;width:100%;height:20px;padding:40px;"&gt;
+    Clikeame!&lt;/div&gt;
+                
+&lt;script&gt;
+  function mDown(obj) {
+    obj.style.backgroundColor = "#1ec5e5";
+    obj.innerHTML = "Sueltame";
+  }
+                
+function mUp(obj) {
+  obj.style.backgroundColor="#D94A38";
+  obj.innerHTML="Gracias";
+}
+&lt;/script&gt;
+                
+&lt;/body&gt;
+&lt;/html&gt; 
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <body>
+                
+                <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+                style="background-color:#D94A38;width:100%;height:20px;padding:40px;">
+                Clikeame!</div>
+                
+                <script>
+                function mDown(obj) {
+                  obj.style.backgroundColor = "#1ec5e5";
+                  obj.innerHTML = "Sueltame";
+                }
+                
+                function mUp(obj) {
+                  obj.style.backgroundColor="#D94A38";
+                  obj.innerHTML="Gracias";
+                }
+                </script>
+                
+                </body>
+                </html> 
+              </pre>
+            </p>
+          </div>
+  
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- Registration End -->
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="text-center pb-2">
+      <h1 class="mb-4">Mas Ejemplos</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h4>Onmousedown y Onmouseup</h4>
+        <p>
+          Cambiar una imagen cuando un usuario mantiene presionado el botón del mouse.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;script&gt;
+  function lighton() {
+    document.getElementById('myimage').src = "img/bulbon.gif";
+  }
+  function lightoff() {
+    document.getElementById('myimage').src = "img/bulboff.gif";
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+                
+&lt;body&gt;
+                
+  &lt;img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="img/bulboff.gif" width="100" height="180" /&gt;
+                
+&lt;p&gt;Clikea el foco y sueltalo!&lt;/p&gt;
+                
+&lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <head>
+                <script>
+                function lighton() {
+                  document.getElementById('myimage').src = "img/bulbon.gif";
+                }
+                function lightoff() {
+                  document.getElementById('myimage').src = "img/bulboff.gif";
+                }
+                </script>
+                </head>
+                
+                <body>
+                
+                <img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="img/bulboff.gif" width="100" height="180" />
+                
+                <p>Clikea el foco y sueltalo!</p>
+                
+                </body>
+                </html>
+              </pre>
+            </p>
+          </div>
+  
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- Registration End -->
+<!-- Class Start -->
+<div class="container-fluid pt-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h4>Onfocus</h4>
+        <p>
+          Cambia el color de fondo de un campo de entrada cuando recibe el foco.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Class End -->
+<!-- Registration Start -->
+<div class="container-fluid py-5">
+  <div class="container">
+    <p class="section-title pr-5">
+      <span class="pr-2">Ejemplo</span>
+    </p>
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+       
+        <div class="card text-center">
+          <div class="card-header">
+            Codigo
+          </div>
+          <div class="card-body">
+            <p class="card-text ">
+              <pre class="text-left"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;script&gt;
+  function myFunction2(x) {
+    x.style.background = "yellow";
+  }
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+                
+  Escribe tu nombre: &lt;input type="text" onfocus="myFunction2(this)"&gt;
+                
+  &lt;p&gt;Cuando el campo de entrada se enfoca, se activa una función que cambia el color de fondo.&lt;/p&gt;
+               
+&lt;/body&gt;
+&lt;/html&gt;
+                
+              </code></pre>
+            </p>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="card text-center ">
+          <div class="card-header">
+            Resultado
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <pre class="text-left">
+                <!DOCTYPE html>
+                <html>
+                <head>
+                <script>
+                  function myFunction2(x) {
+                    x.style.background = "yellow";
+                  }
+                </script>
+                </head>
+                <body>
+                                
+                  Escribe tu nombre: <input type="text" onfocus="myFunction2(this)">
+                                
+                  <p>Cuando el campo de entrada se enfoca, se activa una función que cambia el color de fondo.</p>
+                              
+                </body>
+                </html>
+              </pre>
+            </p>
+          </div>
+  
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- Registration End -->
+<!-- Footer Start -->
+    <div
+      class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
+    >
+      <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+          <a
+            href=""
+            class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+            style="font-size: 40px; line-height: 40px"
+          >
+            <i class="bi bi-laptop-fill"></i>
+            <span class="text-white">GRUPO6</span>
+          </a>
+          <p>
+            
+          </p>
+          <div class="d-flex justify-content-start mt-4">
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h3 class="text-primary mb-4">INFO</h3>
+          <div class="d-flex">
+            <h4 class="fa fa-map-marker-alt text-primary"></h4>
+            <div class="pl-3">
+              <h5 class="text-white">Ubicación</h5>
+              <p>Sangolqui, Ecuador</p>
+            </div>
+          </div>
+          
+          
+        </div>
+        
+        
+      </div>
+      <div
+        class="container-fluid pt-5"
+        style="border-top: 1px solid rgba(23, 162, 184, 0.2) ;"
+      >
+        <p class="m-0 text-center text-white">
+          &copy;
+          <a class="text-primary font-weight-bold" href="#">GRUPO6</a>.
+          All Rights Reserved.
+
+          <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+          Designed by
+          <a class="text-primary font-weight-bold" href="#"
+            >Rafch & FrameLotus</a
+          >
+          <br />
+        </p>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
