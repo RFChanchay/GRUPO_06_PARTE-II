@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>KidKinder - Kindergarten Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+      <nav
+        class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
+      >
+        <a
+          href="index.html"
+          class="navbar-brand font-weight-bold text-secondary"
+          style="font-size: 50px"
+        >
+          <i class="bi bi-laptop-fill"></i>
+          <span class="text-primary">GRUPO6</span>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary mb-5">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center"
+        style="min-height: 400px"
+      >
+        <h3 class="display-3 font-weight-bold text-white">Componentes</h3>
+        <div class="d-inline-flex text-white">
+          <p class="m-0"><a class="text-white" href="index.html">Home</a></p>
+          <p class="m-0 px-2">/</p>
+          <p class="m-0">Componentes</p>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Class Start -->
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            <span class="px-2">JavaScript HTML DOM</span>
+          </p>
+          <h1 class="mb-4">El objeto de documento HTML DOM</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              El objeto del documento representa su página web.
+
+              <br>Si desea acceder a cualquier elemento en una página HTML, siempre comienza accediendo al objeto del documento.
+
+              <br>A continuación se muestran algunos ejemplos de cómo puede utilizar el objeto de documento para acceder y manipular HTML.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Registration Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <h1 class="mb-4">Encontrar elementos HTML</h1>
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th>Método</th>
+                 <th>Descripción</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>document.getElementById(id)</td>
+                 <td>Encuentra un elemento por id de elemento</td>
+
+               </tr>
+               <tr>
+                 <td>document.getElementsByTagName(name)</td>
+                 <td>
+                  Buscar elementos por nombre de etiqueta</td>
+               </tr>
+               <tr>
+                <td>document.getElementsByClassName(name)</td>
+                <td>Buscar elementos por nombre de clase</td>
+              </tr>
+             </tbody>
+           </table>
+           
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+    <!-- Registration End -->
+        <!-- Registration Start -->
+        <div class="container-fluid py-5">
+          <div class="container">
+            <h1 class="mb-4">Cambio de elementos HTML</h1>
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+               <table class="table table-bordered">
+                 <thead>
+                   <tr>
+                     <th>Propiedades</th>
+                     <th>Descripción</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <td>element.innerHTML =  new html content</td>
+                     <td>Cambiar el HTML interno de un elemento</td>
+    
+                   </tr>
+                   <tr>
+                     <td>element.attribute = new value</td>
+                     <td>Cambiar el valor del atributo de un elemento HTML</td>
+                   </tr>
+                   <tr>
+                    <td>element.style.property = new style</td>
+                    <td>Cambiar el estilo de un elemento HTML</td>
+                  </tr>
+                 </tbody>
+                 <thead>
+                  <tr>
+                    <th>Método</th>
+                    <th>Descripción</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>element.setAttribute(attribute, value)</td>
+                    <td>Cambiar el valor del atributo de un elemento HTML</td>
+                  </tr>
+                </tbody>
+               </table>
+               
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+        <!-- Registration End -->
+    <!-- Registration Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <h1 class="mb-4">Adición y eliminación de elementos</h1>
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th>Método</th>
+                 <th>Descripción</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>document.createElement(element)</td>
+                 <td>Crear un elemento HTML</td>
+
+               </tr>
+               <tr>
+                 <td>document.removeChild(element)</td>
+                 <td>Eliminar un elemento HTML</td>
+               </tr>
+               <tr>
+                <td>document.appendChild(element)</td>
+                <td>Agregar un elemento HTML</td>
+              </tr>
+              <tr>
+                <td>document.replaceChild(new, old)</td>
+                <td>Reemplazar un elemento HTML</td>
+              </tr>
+              <tr>
+                <td>document.write(text)</td>
+                <td>Escribir en el flujo de salida HTML</td>
+              </tr>
+             </tbody>
+           </table>
+           
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+    <!-- Registration End -->
+    <!-- Registration Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <h1 class="mb-4">Adición de controladores de eventos</h1>
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th>Método</th>
+                 <th>Descripción</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>document.getElementById(id).onclick = function(){code}</td>
+                 <td>Agregar código de controlador de eventos a un evento onclick</td>
+               </tr>
+             </tbody>
+           </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Registration End -->
+    <!-- Registration Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <h1 class="mb-4">Encontrar objetos HTML</h1>
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <p>
+              El primer HTML DOM Nivel 1 (1998), definió 11 objetos HTML, colecciones de objetos y propiedades. Estos siguen siendo válidos en HTML5.
+              <br>Más tarde, en HTML DOM Nivel 3, se agregaron más objetos, colecciones y propiedades.
+            </p>
+           <table class="table table-bordered">
+             <thead>
+               <tr>
+                 <th>Propiedades</th>
+                 <th>Descripción</th>
+                 <th>DOM</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>document.anchors</td>
+                 <td>Devuelve todos los elementos que tienen un atributo de nombre</td>
+                 <td>1</td>
+               </tr>
+               <tr>
+                <td>document.applets</td>
+                <td>Obsoleto</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>document.baseURI</td>
+                <td>Devuelve el URI base absoluto del documento.</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>document.body</td>
+                <td>Devuelve el elemento del cuerpo.</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>document.cookie</td>
+                <td>Devuelve la cookie del documento.</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>document.doctype</td>
+                <td>Devuelve el tipo de documento del documento.</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>document.documentElement</td>
+                <td>Devuelve el elemento html</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>document.documentMode</td>
+                <td>Devuelve el modo utilizado por el navegador.</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>document.documentURI</td>
+                <td>Devuelve la URI del documento</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>document.domain</td>
+                <td>Devuelve el nombre de dominio del servidor de documentos.</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>document.domConfig</td>
+                <td>Obsoleto</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>document.embeds</td>
+                <td>Devuelve todos los elementos incrustados.</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>document.forms</td>
+                <td>Devuelve todos los elementos del formulario.</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>document.head</td>
+                <td>Devuelve el elemento principal.</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>document.images</td>
+                <td>Devuelve todos los elementos img</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>document.implementation</td>
+                <td>Devuelve la implementación DOM</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>document.inputEncoding</td>
+                <td>Devuelve la codificación del documento (conjunto de caracteres)</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>document.lastModified</td>
+                <td>Devuelve la fecha y hora en que se actualizó el documento.</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>document.links</td>
+                <td>Devuelve todas las áreas y elementos que tienen un atributo href</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>document.readyState</td>
+                <td>Devuelve el estado (de carga) del documento</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>document.referrer</td>
+                <td>Devuelve el URI del remitente (el documento de enlace)</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>document.scripts</td>
+                <td>Devuelve todos los elementos del script.</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>document.strictErrorChecking</td>
+                <td>Devuelve si se aplica la comprobación de errores.</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>document.title</td>
+                <td>Devuelve el elemento del título.</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>document.URL</td>
+                <td>Devuelve la URL completa del documento.</td>
+                <td>1</td>
+              </tr>
+              </tbody>
+           </table>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Registration End -->    
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
+    >
+      <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+          <a
+            href=""
+            class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+            style="font-size: 40px; line-height: 40px"
+          >
+            <i class="bi bi-laptop-fill"></i>
+            <span class="text-white">GRUPO6</span>
+          </a>
+          <p>
+            
+          </p>
+          <div class="d-flex justify-content-start mt-4">
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h3 class="text-primary mb-4">INFO</h3>
+          <div class="d-flex">
+            <h4 class="fa fa-map-marker-alt text-primary"></h4>
+            <div class="pl-3">
+              <h5 class="text-white">Ubicación</h5>
+              <p>Sangolqui, Ecuador</p>
+            </div>
+          </div>
+          
+          
+        </div>
+        
+        
+      </div>
+      <div
+        class="container-fluid pt-5"
+        style="border-top: 1px solid rgba(23, 162, 184, 0.2) ;"
+      >
+        <p class="m-0 text-center text-white">
+          &copy;
+          <a class="text-primary font-weight-bold" href="#">GRUPO6</a>.
+          All Rights Reserved.
+
+          <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+          Designed by
+          <a class="text-primary font-weight-bold" href="#"
+            >Rafch & FrameLotus</a
+          >
+          <br />
+        </p>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

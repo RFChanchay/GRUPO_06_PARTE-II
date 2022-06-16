@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>KidKinder - Kindergarten Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+      <nav
+        class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
+      >
+        <a
+          href="index.html"
+          class="navbar-brand font-weight-bold text-secondary"
+          style="font-size: 50px"
+        >
+          <i class="bi bi-laptop-fill"></i>
+          <span class="text-primary">GRUPO6</span>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+      </nav>
+    </div>
+    <!-- Navbar End -->
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary mb-5">
+      <div
+        class="d-flex flex-column align-items-center justify-content-center"
+        style="min-height: 400px"
+      >
+        <h3 class="display-3 font-weight-bold text-white">HTML</h3>
+        <div class="d-inline-flex text-white">
+          
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Class Start -->
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            
+          </p>
+          <h1 class="mb-4">Cambio de contenido HTML</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p><span>La forma m&aacute;s sencilla de modificar el contenido de un elemento HTML es mediante la&nbsp;</span><code class="w3-codespan">innerHTML</code><span>propiedad.</span></p>
+<p><span>Para cambiar el contenido de un elemento HTML, utilice esta sintaxis:</span></p>
+<div class="w3-code w3-border notranslate">
+<div>document.getElementById(<i>id</i>).innerHTML =<i><span>&nbsp;</span>new HTML</i></div>
+</div>
+<p><span>Este ejemplo cambia el contenido de un&nbsp;</span><code class="w3-codespan">&lt;p&gt;</code><span>elemento:</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Registration Start -->
+    
+
+    <div class="container-fluid py-1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+<p>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;head&gt;<br />&lt;script&gt;<br />function validateForm() {<br />let x = document.forms["myForm"]["fname"].value;<br />if (x == "") {<br />alert("Name must be filled out");<br />return false;<br />}<br />}<br />&lt;/script&gt;<br />&lt;/head&gt;<br />&lt;body&gt;</p>
+<p>&lt;h2&gt;JavaScript Validation&lt;/h2&gt;</p>
+<p>&lt;form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post"&gt;<br />Name: &lt;input type="text" name="fname"&gt;<br />&lt;input type="submit" value="Submit"&gt;<br />&lt;/form&gt;</p>
+<p>&lt;/body&gt;<br />&lt;/html&gt;</p>
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left">
+                    <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript can Change HTML</h2>
+
+<p id="p1">Hello World!</p>
+
+<script>
+document.getElementById("p1").innerHTML = "New text!";
+</script>
+
+<p>The paragraph above was changed by a script.</p>
+
+</body>
+</html>
+                  </pre>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+          <p><span>Ejemplo explicado:</span></p><br>
+<ul>
+<li><span>El documento HTML anterior contiene un&nbsp;</span><code class="w3-codespan">&lt;p&gt;</code><span>elemento con</span><code class="w3-codespan">id="p1"</code></li>
+<li><span>Usamos el HTML DOM para obtener el elemento con</span><code class="w3-codespan">id="p1"</code></li>
+<li><span>Un JavaScript cambia el contenido (&nbsp;</span><code class="w3-codespan">innerHTML</code><span>) de ese elemento a "&iexcl;Texto nuevo!"</span></li>
+</ul>
+<p><span>Este ejemplo cambia el contenido de un&nbsp;</span><code class="w3-codespan">&lt;h1&gt;</code><span>elemento:</span></p>
+        </div>
+        
+      </div>
+    </div>
+
+     <!-- Class Start -->
+    
+    <!-- Registration Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <p class="section-title pr-5">
+          <span class="pr-2">Ejemplo</span>
+        </p>
+        
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+<p>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;body&gt;</p>
+<p>&lt;h1 id="id01"&gt;Old Heading&lt;/h1&gt;</p>
+<p>&lt;script&gt;<br />const element = document.getElementById("id01");<br />element.innerHTML = "New Heading";<br />&lt;/script&gt;</p>
+<p>&lt;p&gt;JavaScript changed "Old Heading" to "New Heading".&lt;/p&gt;</p>
+<p>&lt;/body&gt;<br />&lt;/html&gt;</p>
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left">
+                    <!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id01">Old Heading</h1>
+
+<script>
+const element = document.getElementById("id01");
+element.innerHTML = "New Heading";
+</script>
+
+<p>JavaScript changed "Old Heading" to "New Heading".</p>
+
+</body>
+</html> 
+                  </pre>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+          <p><span>Ejemplo explicado:</span></p>
+<ul>
+<li><span>El documento HTML anterior contiene un&nbsp;</span><code class="w3-codespan">&lt;h1&gt;</code><span>elemento con</span><code class="w3-codespan">id="id01"</code></li>
+<li><span>Usamos el HTML DOM para obtener el elemento con</span><code class="w3-codespan">id="id01"</code></li>
+<li><span>Un JavaScript cambia el contenido (&nbsp;</span><code class="w3-codespan">innerHTML</code><span>) de ese elemento a "Nuevo encabezado"</span></li>
+</ul>
+        </div>
+      </div>
+    </div>
+    <!-- Registration End -->
+    <!-- Class Start -->
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            
+          </p>
+          <h1 class="mb-4">Cambiar el valor de un atributo</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p><span>Para cambiar el valor de un atributo HTML, use esta sintaxis:</span></p>
+<div class="w3-code w3-border notranslate htmlHigh">
+<div>document.getElementById(<i>id</i>).<i>attribute = new value</i></div>
+</div>
+<p><span>Este ejemplo cambia el valor del atributo src de un&nbsp;</span><code class="w3-codespan">&lt;img&gt;</code><span>elemento:</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Registration Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <p class="section-title pr-5">
+          <span class="pr-2">Ejemplo</span>
+        </p>
+        
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+<p>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;body&gt;</p>
+<p>&lt;h2&gt;JavaScript HTML DOM&lt;/h2&gt;<br />&lt;img id="image" src="smiley.gif" width="160" height="120"&gt;</p>
+<p>&lt;script&gt;<br />document.getElementById("image").src = "landscape.jpg";<br />&lt;/script&gt;</p>
+<p>&lt;p&gt;The original image was smiley.gif, but the script changed it to landscape.jpg&lt;/p&gt;</p>
+<p>&lt;/body&gt;<br />&lt;/html&gt;</p>
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left">
+                   <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+<img id="image" src="img/testimonial-1.jpg" width="160" height="120">
+
+<script>
+document.getElementById("image").src = "img/testimonial-2.jpg";
+</script>
+
+<p>The original image was smiley.gif, but the script changed it to landscape.jpg</p>
+
+</body>
+</html>
+                  </pre>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+          <p><span>Ejemplo explicado:</span></p>
+<ul>
+<li><span>El documento HTML anterior contiene un&nbsp;</span><code class="w3-codespan">&lt;img&gt;</code><span>elemento con</span><code class="w3-codespan">id="myImage"</code></li>
+<li><span>Usamos el HTML DOM para obtener el elemento con</span><code class="w3-codespan">id="myImage"</code></li>
+<li><span>Un JavaScript cambia el&nbsp;</span><code class="w3-codespan">src</code><span>atributo de ese elemento de "smiley.gif" a "landscape.jpg"</span></li>
+</ul>
+        </div>
+      </div>
+    </div>
+    <!-- Registration End -->
+    <!-- Class Start -->
+    <div class="container-fluid pt-2">
+      <div class="container">
+        <div class="text-center pb-2">
+          <h1 class="mb-4">Contenido HTML dinámico</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            JavaScript puede crear contenido HTML dinámico:<br>
+
+Fecha: jue 09 jun 2022 16:47:10 GMT-0500 (hora de Ecuador)
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Class End -->
+<!-- Registration Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <p class="section-title pr-5">
+          <span class="pr-2">Ejemplo</span>
+        </p>
+        
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+<p>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;body&gt;</p>
+<p>&lt;p id="demo"&gt;&lt;/p&gt;</p>
+<p>&lt;script&gt;<br />document.getElementById("demo").innerHTML = "Date : " + Date();<br />&lt;/script&gt;</p>
+<p>&lt;/body&gt;<br />&lt;/html&gt; </p>
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left">
+                   <!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Date : " + Date();
+</script>
+
+</body>
+</html>
+                  </pre>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+    <!-- Registration End -->
+
+        <!-- Class Start -->
+        <div class="container-fluid pt-5">
+          <div class="container">
+            <div class="text-center pb-2">
+              <h1 class="mb-4">document.write()</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                En JavaScript, document.write()se puede usar para escribir directamente en el flujo de salida HTML:
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Class End --> 
+        <!-- Registration Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <p class="section-title pr-5">
+          <span class="pr-2">Ejemplo</span>
+        </p>
+        
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+           
+            <div class="card text-center">
+              <div class="card-header">
+                Codigo
+              </div>
+              <div class="card-body">
+                <p class="card-text ">
+                  <pre class="text-left"><code>
+<p>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;body&gt;</p>
+<p>&lt;p&gt;Bla, bla, bla&lt;/p&gt;</p>
+<p>&lt;script&gt;<br />document.write(Date());<br />&lt;/script&gt;</p>
+<p>&lt;p&gt;Bla, bla, bla&lt;/p&gt;</p>
+<p>&lt;/body&gt;<br />&lt;/html&gt; </p>
+                  </code></pre>
+                </p>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div class="card text-center ">
+              <div class="card-header">
+                Resultado
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  <pre class="text-left">
+                   <!DOCTYPE html>
+<html>
+<body>
+
+<p>Bla, bla, bla</p>
+
+<script>
+document.write(Date());
+</script>
+
+<p>Bla, bla, bla</p>
+
+</body>
+</html>
+                  </pre>
+                </p>
+              </div>
+              
+            </div>
+          </div>
+         Nunca lo use document.write()después de cargar el documento. Sobrescribirá el documento.
+        </div>
+      </div>
+
+    </div>
+    <!-- Registration End -->
+
+
+    <!-- Registration End -->
+    
+        
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5"
+    >
+      <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+          <a
+            href=""
+            class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+            style="font-size: 40px; line-height: 40px"
+          >
+            <i class="bi bi-laptop-fill"></i>
+            <span class="text-white">GRUPO6</span>
+          </a>
+          <p>
+            
+          </p>
+          <div class="d-flex justify-content-start mt-4">
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+              style="width: 38px; height: 38px"
+              href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h3 class="text-primary mb-4">INFO</h3>
+          <div class="d-flex">
+            <h4 class="fa fa-map-marker-alt text-primary"></h4>
+            <div class="pl-3">
+              <h5 class="text-white">Ubicación</h5>
+              <p>Sangolqui, Ecuador</p>
+            </div>
+          </div>
+          
+          
+        </div>
+        
+        
+      </div>
+      <div
+        class="container-fluid pt-5"
+        style="border-top: 1px solid rgba(23, 162, 184, 0.2) ;"
+      >
+        <p class="m-0 text-center text-white">
+          &copy;
+          <a class="text-primary font-weight-bold" href="#">GRUPO6</a>.
+          All Rights Reserved.
+
+          <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+          Designed by
+          <a class="text-primary font-weight-bold" href="#"
+            >Rafch & FrameLotus</a
+          >
+          <br />
+        </p>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
